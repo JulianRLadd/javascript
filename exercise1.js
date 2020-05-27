@@ -159,16 +159,25 @@ const foodArray = ['potatoes', 'tamales', 'lemon', 'strawberries', 'chocolate', 
 var school = foodArray[6];
 console.log(school)
 
+
+
 const adjectiveArray = ['salty', 'spicy', 'sour', 'sweet', 'rich', 'creamy', 'amazing'];
 // Using both the foodArray and the adjectiveArray, make a
 // "for" loop that console.log()'s a sentence for each
 // corresponding value in the arrays. Add the word "is" or "are" depending on if the food is singular 
 //or plural.  "Potatoes are salty", "Lemon is sour".
 
+
+
+
 for(var i=0;i<foodArray.length;i++){
+    if((typeof foodArray[i]) == "object"){
+    foodArray[i]=foodArray[i].school
+    }
     switch (foodArray[i].charAt(foodArray[i].length-1)){
         case "s":
             var inBetween = "are"
+            break;
         default:
             var inBetween = "is"
     }
