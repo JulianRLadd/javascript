@@ -95,6 +95,7 @@ function getCarInfo(targetCar) {
     console.log(targetCar.model)
 };
 
+getCarInfo(juliansCar)
 
 
 /************************************************************* */
