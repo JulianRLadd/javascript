@@ -110,21 +110,19 @@ console.log(sum(list2))
 
 //your code...
 
-function strand(str) {
-    dNA = str.split()
-    dict = {
-        "C": 0,
-        "G": 1,
-        "A": 2,
-        "T": 3,
+function strand(dna) {
+    str = dna.split("")
+    str.sort()
+    for (let i = 0; i < 2; i++) {
+        let temp = str[i];
+        str[i] = str[i + 1];
+        str[i + 1] = temp;
     }
-
-    for (let i = 0; i < str.length; i++) {
-        if (dict[str[i]]) {
-
-        }
-    }
+    return str
 }
+
+
+console.log(strand("GCAT"))
 
 
 
