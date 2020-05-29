@@ -79,14 +79,14 @@ numReverse(1234567890);
 
 //your code...
 
-function car(year, color, make, model) {
+const Car = function (year, color, make, model) {
     this.year = year;
     this.color = color;
     this.make = make;
     this.model = model;
 }
 
-var juliansCar = new car(1990, "Green", "Ford", "Mustang");
+var juliansCar = new Car(1990, "Green", "Ford", "Mustang");
 
 function getCarInfo(targetCar) {
     console.log(targetCar.year)
